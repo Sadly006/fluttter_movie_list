@@ -5,7 +5,7 @@ import 'package:provider/provider.dart';
 class DetailsPage extends StatelessWidget {
   final int index;
 
-  DetailsPage({required this.index});
+  const DetailsPage({super.key, required this.index});
 
   @override
   Widget build(BuildContext context) {

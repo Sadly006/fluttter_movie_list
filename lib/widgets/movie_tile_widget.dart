@@ -96,54 +96,5 @@ class MovieTile extends StatelessWidget {
         ],
       ),
     );
-    // return Container(
-    //   padding: const EdgeInsets.all(10),
-    //   decoration: BoxDecoration(
-    //     border: Border.all(color: Colors.grey),
-    //     borderRadius: BorderRadius.circular(10),
-    //   ),
-    //   child: Column(
-    //     crossAxisAlignment: CrossAxisAlignment.start,
-    //     children: <Widget>[
-    //       Row(
-    //         mainAxisAlignment: MainAxisAlignment.spaceBetween,
-    //         children: <Widget>[
-    //           Image.network(
-    //             movie.poster,
-    //             width: 100,
-    //             height: 100,
-    //             fit: BoxFit.cover,
-    //           ),
-    //           Column(
-    //             children: <Widget>[
-    //               Text(
-    //                 movie.title,
-    //                 style: const TextStyle(
-    //                   fontSize: 18,
-    //                   fontWeight: FontWeight.bold,
-    //                 ),
-    //               ),
-    //               Text('Year: ${movie.year}'),
-    //               Text('Runtime: ${movie.runtime}'),
-    //             ],
-    //           ),
-    //           IconButton(
-    //             icon: Icon(
-    //               movie.isLiked ? Icons.star : Icons.star_border,
-    //               color: movie.isLiked ? Colors.amber : Colors.grey,
-    //             ),
-    //             onPressed: () {
-    //               if (movie.isLiked) {
-    //                 movieProvider.dislikeMovie(index);
-    //               } else {
-    //                 movieProvider.likeMovie(index);
-    //               }
-    //             },
-    //           ),
-    //         ],
-    //       ),
-    //     ],
-    //   ),
-    // );
   }
 }

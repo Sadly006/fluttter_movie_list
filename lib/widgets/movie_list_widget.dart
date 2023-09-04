@@ -5,9 +5,8 @@ import 'package:provider/provider.dart';
 import 'movie_tile_widget.dart';
 
 class MovieListWidget extends StatelessWidget {
-  // final List<Movie> movies;
 
-  MovieListWidget();
+  const MovieListWidget({super.key});
 
   @override
   Widget build(BuildContext context) {

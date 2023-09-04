@@ -59,6 +59,7 @@ class _LoginScreenState extends State<LoginScreen> {
     return Scaffold(
       appBar: AppBar(
         title: const Text("Login"),
+        backgroundColor: const Color.fromARGB(255, 36, 34, 67),
       ),
       body: Container(
         height: MediaQuery.of(context).size.height,
@@ -68,9 +69,6 @@ class _LoginScreenState extends State<LoginScreen> {
             begin: Alignment.center,
             end: Alignment(0.1, 1),
             colors: <Color>[
-              Color.fromARGB(255, 255, 255, 255),
-              Color.fromARGB(255, 250, 250, 250),
-              Color.fromARGB(255, 250, 249, 250),
               Color.fromARGB(255, 255, 255, 255),
               Color.fromARGB(255, 228, 205, 192),
               Color.fromARGB(255, 236, 194, 147),
@@ -96,7 +94,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       borderRadius: BorderRadius.circular(10),
                       borderSide: BorderSide.none,
                     ),
-                    hintText: 'Email',
+                    hintText: 'Username',
                   ),
                 ),
               ),
@@ -135,6 +133,10 @@ class _LoginScreenState extends State<LoginScreen> {
             const SizedBox(height: 20.0),
             ElevatedButton(
               onPressed: _login,
+              style: ElevatedButton.styleFrom(
+                primary: const Color.fromARGB(
+                    255, 125, 118, 221), // Background color
+              ),
               child: const Text("Login"),
             ),
           ],

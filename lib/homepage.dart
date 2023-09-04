@@ -25,7 +25,7 @@ class HomeScreen extends StatelessWidget {
               child: Text('Error: ${snapshot.error}'),
             );
           } else {
-            return MovieListWidget(); // No need to pass movies here
+            return const MovieListWidget(); // No need to pass movies here
           }
         },
       ),
